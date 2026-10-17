@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basmala | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <header>
+        <nav>
+            <button id="menu-toggle" class="menu-toggle" type="button"
+                    aria-label="Open menu" aria-expanded="false"
+                    aria-controls="nav-links">☰</button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button id="theme-toggle" type="button"
+                    aria-label="Switch to light mode">☾</button>
+            <button id="language-toggle" type="button"
+                    aria-label="Switch to Arabic">العربية</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <h1>Hi, I'm Basmala Ahmed</h1>
+                <h2>Aspiring Cybersecurity Specialist</h2>
+
+                <p>
+                    I'm a student with a strong interest in technology,
+                    Linux, and cybersecurity.
+                </p>
+
+                <p class="typing-line">
+                    <span id="learning-label">Currently learning</span>
+                    <span id="typing-text"></span><span class="typing-cursor">|</span>
+                </p>
+
+                <a class="button" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="home-photo-wrap">
+                <img src="profile (2).jpg"
+                     alt="Basmala's graduation photo"
+                     class="profile-photo">
+
+                <span class="tech-badge badge-cyber">Cybersecurity</span>
+                <span class="tech-badge badge-network">Networking</span>
+                <span class="tech-badge badge-linux">Linux</span>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a student at Delta Higher Institute for Management
+                and Accounting Information Systems. I'm interested in
+                IT, Linux, and cybersecurity, and I'm continually
+                developing my knowledge and skills in these areas.
+                My future goal is to work at Dark Entry, Ibrahim
+                Hegazy's company, and build a career in cybersecurity.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education &amp; Learning Journey</h2>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <h3>Education</h3>
+                    <p>
+                        Delta Higher Institute for Management and
+                        Accounting Information Systems
+                    </p>
+                </article>
+
+                <article class="timeline-item">
+                    <h3>Currently Learning</h3>
+                    <p>
+                        HTML, CSS, Linux fundamentals, networking,
+                        and cybersecurity basics.
+                    </p>
+                </article>
+
+                <article class="timeline-item">
+                    <h3>Career Goal</h3>
+                    <p>
+                        Build a career in cybersecurity and work at
+                        Dark Entry in the future.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="skills-list">
+                <span tabindex="0" role="button" aria-pressed="false">HTML</span>
+                <span tabindex="0" role="button" aria-pressed="false">CSS</span>
+                <span tabindex="0" role="button" aria-pressed="false">Computer Fundamentals</span>
+                <span tabindex="0" role="button" aria-pressed="false">Linux (Learning)</span>
+                <span tabindex="0" role="button" aria-pressed="false">Cybersecurity (Learning)</span>
+            </div>
+
+            <p id="skill-description" aria-live="polite">
+                Click a skill to learn more about it.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects I'm Planning</h2>
+            <p>These are ideas for projects I plan to build while learning.</p>
+
+            <div class="project-filters">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="web">Web</button>
+                <button class="filter-button" data-filter="linux">Linux</button>
+                <button class="filter-button" data-filter="cybersecurity">
+                    Cybersecurity
+                </button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 project-item" data-category="web">
+                    <div class="project-card h-100">
+                        <h3>Personal Portfolio</h3>
+                        <p>
+                            A planned personal website to introduce myself
+                            and my career interests.
+                        </p>
+                        <span class="project-tag">Planned</span>
+                        <button class="details-button" type="button"
+                                data-title-en="Personal Portfolio"
+                                data-title-ar="الموقع الشخصي"
+                                data-details-en="A planned project to practice HTML, CSS, Bootstrap, and responsive web design."
+                                data-details-ar="خطة للتدرب على HTML وCSS وBootstrap وتصميم مواقع متجاوبة.">
+                            View Plan
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 project-item" data-category="linux">
+                    <div class="project-card h-100">
+                        <h3>Linux Learning Lab</h3>
+                        <p>
+                            A future project to practice Linux commands
+                            and basic system administration.
+                        </p>
+                        <span class="project-tag">Planned</span>
+                        <button class="details-button" type="button"
+                                data-title-en="Linux Learning Lab"
+                                data-title-ar="معمل تعلم Linux"
+                                data-details-en="A planned learning project to practice Linux commands, file management, and basic system administration."
+                                data-details-ar="خطة للتدرب على أوامر Linux وإدارة الملفات وأساسيات إدارة النظام.">
+                            View Plan
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 project-item" data-category="cybersecurity">
+                    <div class="project-card h-100">
+                        <h3>Cybersecurity Notes</h3>
+                        <p>
+                            A planned collection of notes about networking
+                            and cybersecurity fundamentals.
+                        </p>
+                        <span class="project-tag">Planned</span>
+                        <button class="details-button" type="button"
+                                data-title-en="Cybersecurity Notes"
+                                data-title-ar="ملاحظات الأمن السيبراني"
+                                data-details-en="A planned collection of notes about networking, security fundamentals, and safe computing."
+                                data-details-ar="خطة لجمع ملاحظات عن الشبكات وأساسيات الأمن السيبراني والاستخدام الآمن.">
+                            View Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <div class="contact-links">
+                <a class="contact-item" href="mailto:basmala.ahmed.1922@gmail.com">
+                    <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                    <span>basmala.ahmed.1922@gmail.com</span>
+                </a>
+
+                <a class="contact-item"
+                   href="https://wa.me/201228956941"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Chat with me on WhatsApp">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    <span>WhatsApp</span>
+                </a>
+
+                <a class="contact-item"
+                   href="https://github.com/basmalaahmed1922-lang"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    <span>basmalaahmed1922-lang</span>
+                </a>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <label for="visitor-name">Your name</label>
+                <input id="visitor-name" name="name" type="text" required>
+
+                <label for="visitor-email">Your email</label>
+                <input id="visitor-email" name="email" type="email" required>
+
+                <label for="visitor-message">Your message</label>
+                <textarea id="visitor-message" name="message" rows="5" required></textarea>
+
+                <button class="button" type="submit">Prepare Email</button>
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <dialog id="project-dialog" class="project-dialog">
+        <button id="close-project-dialog" class="close-project-dialog"
+                type="button" aria-label="Close project details">×</button>
+        <h2 id="project-dialog-title"></h2>
+        <p id="project-dialog-details"></p>
+    </dialog>
+
+    <footer>
+        <p>&copy; 2026 Basmala</p>
+    </footer>
+
+    <button id="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
